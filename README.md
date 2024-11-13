@@ -2,8 +2,6 @@
 
 <img src="./docs/static/img/1500x500.png" alt="Orion Banner" width="100%" />
 
-### [For Chinese Version: 中文说明](./README_CN.md)
-
 ## Features
 
 -   🛠 Full-featured Discord, Twitter and Telegram connectors
