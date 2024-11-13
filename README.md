@@ -1,4 +1,4 @@
-# Eliza
+# Orion
 
 <img src="./docs/static/img/1500x500.png" alt="Orion Banner" width="100%" />
 
@@ -46,11 +46,11 @@ pnpm i
 pnpm start
 ```
 
-# Customising Eliza
+# Customising Orion
 
 ### Adding custom actions
 
-To avoid git clashes in the core directory, we recommend adding custom actions to a `custom_actions` directory and then adding them to the `elizaConfig.yaml` file. See the `elizaConfig.example.yaml` file for an example.
+To avoid git clashes in the core directory, we recommend adding custom actions to a `custom_actions` directory and then adding them to the `orionConfig.yaml` file. See the `orionConfig.example.yaml` file for an example.
 
 ## Running with Orion
 
