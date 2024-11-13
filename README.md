@@ -1,6 +1,6 @@
 # Eliza
 
-<img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
+<img src="./docs/static/img/1500x500.png" alt="Orion Banner" width="100%" />
 
 ### [For Chinese Version: 中文说明](./README_CN.md)
 
@@ -52,19 +52,9 @@ pnpm start
 
 To avoid git clashes in the core directory, we recommend adding custom actions to a `custom_actions` directory and then adding them to the `elizaConfig.yaml` file. See the `elizaConfig.example.yaml` file for an example.
 
-## Running with different models
+## Running with Orion
 
-### Run with Llama
-
-You can run Llama 70B or 405B models by setting the `XAI_MODEL` environment variable to `meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo` or `meta-llama/Meta-Llama-3.1-405B-Instruct`
-
-### Run with Grok
-
-You can run Grok models by setting the `XAI_MODEL` environment variable to `grok-beta`
-
-### Run with OpenAI
-
-You can run OpenAI models by setting the `XAI_MODEL` environment variable to `gpt-4o-mini` or `gpt-4o`
+You can run Orion's model by setting the `AI_MODEL` environment variable to 'orion_ai16z_v1'
 
 ## Additional Requirements
 
@@ -82,9 +72,8 @@ You will need to add environment variables to your .env file to connect to vario
 # Required environment variables
 DISCORD_APPLICATION_ID=
 DISCORD_API_TOKEN= # Bot token
-OPENAI_API_KEY=sk-* # OpenAI API key, starting with sk-
+ORION_API_KEY=or-* # Orion API key
 ELEVENLABS_XI_API_KEY= # API key from elevenlabs
-GOOGLE_GENERATIVE_AI_API_KEY= # Gemini API key
 
 # ELEVENLABS SETTINGS
 ELEVENLABS_MODEL_ID=eleven_multilingual_v2
@@ -103,12 +92,7 @@ TWITTER_EMAIL= # Account email
 TWITTER_COOKIES= # Account cookies
 
 X_SERVER_URL=
-XAI_API_KEY=
-XAI_MODEL=
-
-
-# For asking Claude stuff
-ANTHROPIC_API_KEY=
+ORION_MODEL=
 
 WALLET_PRIVATE_KEY=EXAMPLE_WALLET_PRIVATE_KEY
 WALLET_PUBLIC_KEY=EXAMPLE_WALLET_PUBLIC_KEY
@@ -139,12 +123,6 @@ npx --no node-llama-cpp source download --gpu cuda
 ```
 
 Make sure that you've installed the CUDA Toolkit, including cuDNN and cuBLAS.
-
-### Running locally
-
-Add XAI_MODEL and set it to one of the above options from [Run with
-Llama](#run-with-llama) - you can leave X_SERVER_URL and XAI_API_KEY blank, it
-downloads the model from huggingface and queries it locally
 
 # Clients
 
